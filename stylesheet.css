@@ -1,0 +1,279 @@
+@charset "utf-8";
+
+/* ===全体=Bird Watching======= */
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Arial', 'Hiragino Sans', 'Gothic ProN', 'Meiryo', sans-serif;
+    font-size: 0.875rem;
+    color: #444;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  padding: 0 5%;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+
+/* =====ヘッダー====================== */
+#header {
+  background-image: url(img/blue-and-white-fly.jpg);
+  background-position: center top;  
+  background-size: cover;
+  background-repeat: no-repeat; 
+  height: 100vh; 
+  position: relative;
+  margin-bottom: 80px;
+  color: #fff;
+}
+
+#header .site-title {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  font-size: 50px;
+}
+
+/* ======リッスン===================== */
+#listen {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+#listen .container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+#listen .container .item {
+  width: 49%;
+  position: relative;
+}
+
+#listen .container .item img {
+  vertical-align: bottom;
+}
+
+.container a:hover {
+  opacity: 0.6;
+}
+
+.bird {  
+  max-width: 290px;
+  color: #fff;
+  background-color: rgba(51,153,152, 0.5);
+  padding: 15px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  right: 0; 
+}
+
+
+/* =====シーズン================== */
+#season {
+  margin-bottom: 80px;
+  background-image: url(img/paradice-flycatcher.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  text-align: center;
+  padding-top: 60px;
+  color: #fff;
+}
+
+.read-more {
+  text-align: center;
+  margin: 0 auto;
+  width: 133px;
+  margin-top: 30px;
+}
+
+.read-more a {
+  display: block;
+  height: 44px;
+  line-height: 44px;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+/* =====プロテクション====================== */
+.protection {
+  background-color: rgba(51,153,102, 0.2);
+}
+
+.protection .section-title {
+  margin-bottom: 20px ;
+}
+
+.protection .protect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 5%;
+}
+
+.protection .protect .text {
+  width: 48%;
+  text-align: center;
+}
+
+.protection .protect .text span {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.protection .text P {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.protection .text p:last-child {
+  margin-bottom: 0;
+}
+
+/* =====フッター====================== */
+#footer {
+  background-color: #339966;
+  font-size: 0.750rem;
+  color: #fff;
+}
+
+#footer .flex-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 368px;
+}
+
+#footer .flex-item .item a {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: bold;
+}  
+
+#footer .item {
+  line-height: 30px;
+  width: 33%;
+}
+
+#footer .item:first-child {
+  padding: 60px 0;
+}
+
+#footer .item h3 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+#footer .item li {
+  list-style: none;
+}
+
+#footer .item li::before {
+  content: "-";
+  margin-right: 5px;
+}
+
+#footer .copyright {
+  background-color: #fff;
+  height: 73px;
+  line-height: 73px;
+  text-align: center;
+}
+
+#footer .copyright p {
+  font-size: 0.5rem;
+  color: #444;
+}
+
+/* =====SP=========================== */
+@media screen and (max-width: 896px) {
+/* =====SPリッスン=================== */  
+  #listen {
+    margin-bottom: 50px;
+  }
+
+  #listen .container {
+    flex-direction: column;
+  }
+
+  #listen .container .item {
+    width: 100%;
+  }
+
+  #listen .container .item:first-child {
+    margin-bottom: 30px;
+  } 
+
+  #listen .container .item:last-child {
+    width: 100%;
+  }
+  
+
+/* =====SPシーズン================ */
+  #season {
+    margin-bottom: 50px;
+  }
+
+/* =====SPプロテクション========== */
+  .protection .protect {
+    flex-direction: column;
+    padding-bottom: 0px;
+  }
+
+  .protection .protect .text {
+    width: 100%;
+    padding-top: ;
+  }
+
+  .protection .protect .text img {
+    margin-bottom:30px;
+  }
+
+  .protection .protect .text p {
+    margin-bottom: 30px;
+  }  
+
+/* =====SPフッター==================== */
+  #footer .flex-item {
+    height: auto;
+  }
+
+  #footer .flex-item {
+    flex-direction: column;
+  }
+
+  #footer .flex-item .item  {
+    width: 100%;
+    padding: 30px 0 0 0;
+  }
+
+  #footer .flex-item .item:first-child {
+    text-align: center;
+  }
+
+  #footer .copyright {
+    margin-top: 60px;
+  }
+}
